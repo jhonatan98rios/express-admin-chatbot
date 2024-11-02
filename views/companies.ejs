@@ -29,6 +29,7 @@
                     <tr>
                         <th class="py-2 pr-4 pl-8 text-left">Nome</th>
                         <th class="py-2 pr-4 pl-8 text-left">Telefone</th>
+                        <th class="py-2 pr-4 pl-8 text-left">Email</th>
                         <th class="py-2 pr-4 pl-8 text-left">Status</th>
                         <th class="py-2 pr-4 pl-8 text-left">Criado em</th>
                         <th class="py-2 pr-4 pl-8 text-left">Ações</th>
@@ -38,7 +39,8 @@
                     <% companies.forEach(company => { %>
                     <tr class="border-b hover:bg-gray-100">
                         <td class="py-2 pr-4 pl-8"><%= company.name %></td>
-                        <td class="py-2 pr-4 pl-8"><%= company.phone_number %></td>
+                        <td class="py-2 pr-4 pl-8"><%= company.phone_number %></td> 
+                        <td class="py-2 pr-4 pl-8"><%= company.mail %></td>
                         <td class="py-2 pr-4 pl-8"><%= company.status === 0 ? 'Inativo' : company.status === 1 ? 'Ativo' : 'Teste' %></td>
                         <td class="py-2 pr-4 pl-8"><%= new Date(company.created_at).toLocaleDateString('pt-BR') %></td>
                         <td class="py-2 pr-4 pl-8">

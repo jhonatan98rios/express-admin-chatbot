@@ -27,6 +27,15 @@
             </div>
 
             <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="mail">
+                    Email da Empresa
+                </label>
+                <input type="text" id="mail" name="mail" value="<%= company.mail %>" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+            </div>
+
+            
+
+            <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="status">
                     Status
                 </label>
@@ -39,14 +48,14 @@
 
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="instructions">
-                    Instruções
+                    Descrição da empresa
                 </label>
                 <textarea id="instructions" name="instructions" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required><%= company.instructions %></textarea>
             </div>
 
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="footer">
-                    Rodapé
+                    Produtos
                 </label>
                 <textarea id="footer" name="footer" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required><%= company.footer %></textarea>
             </div>

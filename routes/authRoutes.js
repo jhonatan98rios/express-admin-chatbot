@@ -16,12 +16,6 @@ router.get('/login', (req, res) => {
 router.post('/login', (req, res) => {
     const { username, password } = req.body;
 
-    console.log("username: ", username)
-    console.log("password: ", password)
-
-    console.log("ADMIN_USERNAME: ", ADMIN_USERNAME)
-    console.log("ADMIN_PASSWORD: ", ADMIN_PASSWORD)
-
     if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
         req.session.isAuthenticated = true;
         res.redirect('/admin/companies');

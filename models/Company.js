@@ -11,6 +11,7 @@ const companySchema = new mongoose.Schema({
     name: { type: String, required: true },
     phone_number: { type: String, required: true },
     status: { type: Number, enum: Object.values(Status), required: true },
+    mail: { type: String, required: true },
     created_at: { type: String, default: () => new Date().toISOString() },
     instructions: { type: String, required: true },
     footer: { type: String, required: true },
